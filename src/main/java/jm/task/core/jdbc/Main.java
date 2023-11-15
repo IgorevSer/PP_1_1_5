@@ -13,7 +13,7 @@ public class Main {
         userService.saveUser("Elena","Rukova",(byte) 40);
 
         userService.removeUserById(1L);
-        userService.getAllUsers();
+        userService.getAllUsers().forEach(System.out::println);
         userService.cleanUsersTable();
         userService.dropUsersTable();
     }
